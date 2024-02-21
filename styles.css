@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Date box */
+.date-box {
+  background-color: #4f82a2;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px 20px;
+  border-radius: 0; /* Remove border-radius */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%; /* Span the entire width */
+  box-sizing: border-box; /* Include padding in width calculation */
+  z-index: 1; /* Ensure date box is above other elements */
+}
+
+/* University and Newsletter box */
+.university-newsletter-box {
+  background-color: #1c335f;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 40px;
+  border-radius: 0; /* Remove border-radius */
+  position: absolute;
+  left: 0;
+  top: 40px; /* Adjust as needed */
+  width: 100%; /* Span the entire width */
+  box-sizing: border-box; /* Include padding in width calculation */
+  z-index: 0; /* Ensure university-newsletter box is below date box */
+}
+
+.university-name {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #cacaca;
+  font-size: 40px;
+  margin-left: 400px;
+}
+
+.newsletter-title {
+  margin: 0;
+  font-family: "Graduate", sans-serif;
+  font-weight: bold;
+  font-size: 120px;
+  margin-left: 400px;
+}
+
+.university-logo {
+  display: block;
+  height: 400px;
+  max-height: inherit;
+  object-fit: cover;
+  width: 95%; /* Set width to 90% */ /* Set maximum width if needed */
+  margin: 0 auto; /* Center the logo horizontally */
+  position: relative; /* Change position to relative */
+  top: calc(340px); /* Position after newsletter box and add spacing */
+}
+
+main {
+  position: relative;
+  display: flex; /* Add flex display */
+  flex-wrap: wrap; /* Allow wrapping */
+  margin-top: 320px; /* Adjust for the height of other elements */
+  padding: 20px;
+}
+
+/* News container */
+.news {
+  padding-left: 60px;
+  width: calc(70%); /* Adjust width */
+  margin-right: 80px; /* Add margin between news and events */
+}
+
+/* Upcoming Events container */
+.events {
+  width: 15%; /* Adjust width */
+  margin-left: 10px; /* Add margin between news and events */
+  background-color: #1c335f; /* Set background color */
+  color: white; /* Set text color */
+  padding: 20px; /* Add padding */
+  border-radius: 5px; /* Add border radius */
+}
+
+.news h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #1f0059;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.news p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  color: black;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.events h2 {
+  padding-left: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #b3b3b3;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.events h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #b3b3b3;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.events li {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-category {
+  margin-bottom: 20px;
+}
+
+.event-category h3 {
+  margin-bottom: 10px;
+}
+
+.event-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.event-category ul li {
+  margin-bottom: 5px;
+}
